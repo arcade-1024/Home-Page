@@ -1,0 +1,48 @@
+$main-color: #0d2481;
+.header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: $main-color;
+  height: 80px;
+  &--logo{
+    & img{
+      height: 80px;
+    }
+  }
+	&--list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		list-style: none;
+		&-item {
+      margin: 0 10px;
+      font-size: 1.1rem;
+      color: #fff;
+      font-family: 'Noto Sans', sans-serif;
+		}
+  }
+  &--contact{
+    display: flex;
+		flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    padding-right: 30px;
+    &-items{
+      margin: 0 10px;
+      color: #fff;
+      &-btn{
+        padding: 10px 0;
+        width: 100px;
+        color: $main-color;
+        border-radius: 2px;
+        font-size: 0.9rem;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

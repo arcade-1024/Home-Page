@@ -1,0 +1,73 @@
+.all-product {
+	display: flex;
+	flex-direction: row;
+	padding: 5%;
+	&-card-container {
+		width: 100%;
+	}
+	&-card {
+		display: flex;
+		flex-direction: column;
+		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+		// align-items: center;
+		width: 80%;
+		&-img {
+			height: 200px;
+			background-color: #000;
+		}
+		&-body {
+			padding: 8%;
+			line-height: 2;
+			letter-spacing: 0.4px;
+			font-family: "Noto Sans", sans-serif;
+			font-size: 0.9rem;
+			& h4 {
+				font-size: 1.4rem;
+				padding-top: 10px;
+				& span {
+					font-size: 0.8rem;
+					color: #777;
+				}
+			}
+		}
+	}
+	&-text {
+		&-muted {
+			font-family: "Noto Sans", sans-serif;
+			letter-spacing: 1px;
+			color: rgba(0, 0, 0, 0.5);
+		}
+		&-title {
+			font-size: 2.3rem;
+			font-family: "Noto Serif", serif;
+			font-weight: 400;
+		}
+		&-desc {
+			font-family: "Noto Sans", sans-serif;
+			line-height: 1.5;
+			padding-top: 20px;
+			padding-bottom: 40px;
+			color: rgba(119, 119, 119, 0.7);
+		}
+		&-grid {
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 40% 40%;
+			grid-gap: 40px;
+			margin-left: 40px;
+			&-item {
+				& h4 {
+					font-family: "Noto Sans", sans-serif;
+					font-weight: 400;
+					font-size: 1.4rem;
+					line-height: 1.5;
+				}
+				& p {
+					padding-top: 10px;
+					color: rgba(119, 119, 119, 0.9);
+					width: 90%;
+				}
+			}
+		}
+	}
+}
